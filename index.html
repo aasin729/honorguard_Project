@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <style>
+      
+    </style>
+
+    <script type="text/javascript">
+      // <!--article6 갤러리부분 스크립트 -->
+        window.alert = function(){};
+        var defaultCSS = document.getElementById('bootstrap-css');
+        function changeCSS(css){
+            if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />'); 
+            else $('head > link').filter(':first').replaceWith(defaultCSS); 
+        }
+        $( document ).ready(function() {
+          var iframe_height = parseInt($('html').height()); 
+          window.parent.postMessage( iframe_height, 'https://bootsnipp.com');
+        });
+    </script>
+
+    <title>공군의장대</title>
+</head>
+<body>
+    <div id="warp">
+        <header id="header">
+            <div class="headerbox">
+              <div class="row">
+                <div class="logobox">
+                  <h1>
+                    <a href="../index.html" class="logo">
+                      <span class="blind">로고</span>
+                    </a>
+                  </h1>
+                </div>
+              </div>
+              <nav id="nav">
+                <div class="navbox">
+                  <!-- <div class="box_bg"></div> -->
+                  <ul class="depth1">
+                    <li>
+                      <a href="#article2">공군의장대소개</a>
+                    </li>
+                    <li>
+                      <a href="#article3">주요 활동</a>
+                    </li>
+                    <li>
+                      <a href="#article5">모집 절차</a>
+                    </li>
+                    <li>
+                      <a href="#article6">갤러리</a>
+                    </li>
+                    <li>
+                      <a href="#article7">홍보동영상</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </header>
+          <!-- header -->
+          <a href="#" class="hamburger-button">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <!-- hamburger -->
+          <div class="m_menu">
+            <nav class="menu">
+              <ul class="m_depth1">
+                <li>
+                  <a href="#article2">공군의장대소개</a>
+                  <p class="bar"></p>
+                </li>
+                <li>
+                  <a href="#article3">주요활동</a>
+                  <p class="bar"></p>
+                </li>
+                <li>
+                  <a href="#article5">모집절차</a>
+                  <p class="bar"></p>
+                </li>
+                <li>
+                  <a href="#article6">갤러리</a>
+                  <p class="bar"></p>
+                </li>
+                <li class="topMenu">
+                  <a href="#">홍보동영상</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+    </div>
+
+
+    <section id="section" class="wrap">
+        <!-- article1 메인 영상 부분 -->
+        <article id="article1" class="article1">
+            <div class="main">
+                <video id="vid" muted autoplay loop>
+                    <source src="./img/movie1.mp4" type="video/mp4">
+                </video>
+            </div>
+        </article>
+          
+        <!-- article2 의장대 소개 부분  -->
+        <section id="article2" class="section section2 mousewheel">
+          <div class="mousewheel-wrap">
+              <div class="mousewheel-container">
+                  <div class="swiper">
+                      <div class="swiper-wrapper">
+
+                          <div class="swiper-slide">
+                              <div class="scroll-scale-wrap">
+                                  <div class="scale-container">
+                                    <p>REPUBLIC OF KOREA AIRFORCE HONORGUARD<br>
+                                    우리의 자세와 행동은 공군을 대표한다
+                                    <br>대 한 민 국 공 군 의 장 대 </p>
+                                    <img src="./img/logo3.png" alt="">
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                              <div class="scale-container">
+                                <p>의장대는 국가 경축행사 및 외국사절에 대한 <br> 환영,환송 등의 의식을 베풀기 위해 특별히 조직된 부대이며,<br>
+                                 '공군의 얼굴' 이라고 불리는 공군의장대는<br>1951년에 창설되어 국가 행사 및 대통령, 공군 의전행사 등<br>군에서 최고의 예우를 다하고 있습니다.</p>
+                                <img src="./img/logo1.jpg" alt="">
+                              </div>
+                          </div>
+
+                          <div class="swiper-slide last">
+                              <div class="scale-container">
+                                <p>또한, 연간 약100회이상 지역사회의 민간 행사지원<br>(동작시범, 퍼레이드)을 통하여<br>국민과 함께하는 공군으로 나아가며,<br>공군을 홍보하고 위상을 드높이기 위해 노력하고있습니다.</p>
+                                <img src="./img/logo2.jpg" alt="">
+                              </div>
+                          </div>
+                          <div class="swiper-slide empty">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+
+        <!-- article3 주요활동 부분  -->
+        <article id="article3" class="article3">
+          <h1>주요 활동</h1>
+          <p>공군의장대는 주로 아래와 같은 다양한 임무를 수행하고 있습니다.</p>
+           <div class="mission">
+              <div class="mission-1">
+                  <video id="vid" muted autoplay loop>
+                       <source src="./img/video1.mp4" type="video/mp4">
+                   </video>
+              </div>
+               <div class="mission-2">
+                  <div>
+                      <h1>사열행사</h1>
+                      <p>국가행사, 국군의날, 대통령행사 및 외국귀빈VIP<br>주요 공군 의전행사에 엄숙하게 군 최고의 예우를 갖춥니다.</p>
+                      
+                  </div>
+                 <!-- <ul class="img">
+                  <li><img src="./img/hg4.jpg" alt=""></li>
+                  <li><img src="./img/hg4.jpg" alt=""></li>
+                  <li><img src="./img/hg4.jpg" alt=""></li>
+                 </ul> -->
+              </div>
+           </div>
+           <div class="mission">
+             <div class="mission-2">
+               <div>
+                 <h1>동작시범행사</h1>
+                 <p>24인조로 구성되어 일치단결하게 화려한 공군만의<br>특색있는 화려한동작으로 퍼포먼스를 보여드립니다.</p>
+                 <!-- <ul class="img">
+                   <li><img src="./img/hg4.jpg" alt=""></li>
+                   <li><img src="./img/hg4.jpg" alt=""></li>
+                   <li><img src="./img/hg4.jpg" alt=""></li>
+                 </ul> -->
+               </div>
+             </div>
+             <div class="mission-1">
+                <video id="vid" muted autoplay loop>
+                       <source src="./img/video2.mp4" type="video/mp4">
+                   </video>
+             </div>
+           </div>
+           <div class="mission">
+              <div class="mission-1">
+                  <video id="vid" muted autoplay loop>
+                       <source src="./img/video3.mp4" type="video/mp4">
+                   </video>
+              </div>
+               <div class="mission-2">
+                  <div>
+                      <h1>기수단</h1>
+                      <p>기수단에서 기는 각 국가, 군, 부대를 대표하며<br> 
+                         최정예 인원으로, 의전행사시 가장 중요한 역할을 하고 있습니다.</p>
+                  </div>
+                 <!-- <ul class="img">
+                  <li><img src="./img/hg4.jpg" alt=""></li>
+                  <li><img src="./img/hg4.jpg" alt=""></li>
+                  <li><img src="./img/hg4.jpg" alt=""></li>
+                 </ul> -->
+              </div>
+           </div>
+           <div class="mission">
+               <div class="mission-2">
+                  <div>
+                      <h1>장의행사</h1>
+                      <p>현충원행사, 안장식행사등, 나라를 위해 헌신하신<br>모든 호국영령께 대하여 마지막까지 최고의 예우를 다합니다.</p>
+                  </div>
+                 <!-- <ul class="img">
+                  <li><img src="./img/hg4.jpg" alt=""></li>
+                  <li><img src="./img/hg4.jpg" alt=""></li>
+                  <li><img src="./img/hg4.jpg" alt=""></li>
+                 </ul> -->
+              </div>
+              <div class="mission-1">
+               <video id="vid" muted autoplay loop>
+                       <source src="./img/video4.mp4" type="video/mp4">
+                   </video>
+           </div>
+           </div>
+        </article>
+
+        <!-- article4 배경이미지 부분  -->
+        <article id="article4" class="article4">
+           <p>Time once passed will never come back.<br>Join us at the one and only military life<br>air force honor guard!!</p>
+        </article>
+
+        <!-- article5 의장대 모집 부분 -->
+        <article id="article5" class="article5">
+          <h1>공군의장대 모집절차</h1>
+          <div class="recruit1">
+            <img src="./img/airforce1.jpg" alt="">
+            <p>공군인으로서 생각하는 윤리적 원칙이자 공통가치로 행동의 기준이 되며<br>
+              핵심4대가치는 <strong>도전</strong>, <strong>헌신</strong>, <strong>전문성</strong>, <strong>팀워크</strong> 입니다.
+            </p>
+          </div>  
+          
+         <div class="recruit2">
+            <h2>의장대에 지원하기 위해 아래의 자격 요건을 확인하세요.</h2>
+            <p>병무청에서 매월 지원접수가능</p>
+            <p>※ 장교 및 부사관은 당해 T.O 발생시 인사행정(총무)특기로 분류하여 선발 ※</p>
+            <p>배속지 : 국방부의장대대(서울 용산구), 공군본부 의장대(충남 계룡시) , 공군교육사령부 의장대(경남 진주시)</p>
+         </div>
+          <ul class="list">
+                <li class="box">
+                  <h3>연령/신체/자격</h3>
+                  <p>지원서 접수 기준 18세이상 28세이하<br>
+                  1~4급 현역병 입영대상인 사람<br>
+                  자격, 전공 상관없이 지원가능</p>
+                </li>
+                <li class="box">
+                  <h3>신체사항</h3>
+                  <p>신장/체중 : 180~190cm/65~85kg<br>
+                  시력 : 교정시력 0.7이상<br>(안경착용후 0.7이상도 가능)
+                  <br>반팔셔츠 착용시, 문신이 보이지 않는자</p>
+                </li>
+                <li class="box"> 
+                  <h3>체력</h3>
+                  <p>팔굽혀펴기(1분) 15회이상
+                  <br>윗몸일으키기(1분) 19회 이상<br>
+                  쪼그려뛰기(1분) 10회 이상</p>
+                </li>
+                <li class="box">
+                  <h3>지원제한 요건</h3>
+                  <p>금고이상의 형(집행유예 포함)을<br>선고받은사람<br>
+                  재판 중이거나 수사가 종결되지<br>아니한 사람<br>
+                  처분미상으로 통보된 사람</p>
+                </li>
+            </ul>
+        </article> 
+  
+        <!-- 문구 반복 애니메이션 효과 -->
+        <article class="sub2">
+          <div class="sub2-container">
+            <div class="sub2-text">
+              <div class="sub2-wrap">REPUBLIC OF KOREA AIRFORCE HONORGUARD</div>
+              <div class="sub2-wrap">REPUBLIC OF KOREA AIRFORCE HONORGUARD</div>
+              <div class="sub2-wrap">REPUBLIC OF KOREA AIRFORCE HONORGUARD</div>
+              <div class="sub2-wrap">REPUBLIC OF KOREA AIRFORCE HONORGUARD</div>
+              <div class="sub2-wrap">REPUBLIC OF KOREA AIRFORCE HONORGUARD</div>
+              <div class="sub2-wrap">REPUBLIC OF KOREA AIRFORCE HONORGUARD</div>
+            </div>
+          </div>
+        </article>
+
+        <!--article6 갤러리부분  -->
+        <div id="article6" class="container">
+          <div class="gallery">
+            <h1>공군의장대 갤러리</h1>
+            <p>공군의장대의 모습을 담은 사진입니다.</p>
+          </div>
+          <div id="main_area">
+              <!-- Slider -->
+              <div class="row">
+                  <div class="col-sm-6" id="slider-thumbs">
+                      <!-- Bottom switcher of slider -->
+                      <ul class="hide-bullets">
+                          <li >
+                              <a class="thumbnail" id="carousel-selector-0"> <img src="./img/hg0.jpg" alt=""></a>
+                          </li>
+                          <li >
+                              <a class="thumbnail" id="carousel-selector-1"><img src="./img/hg1.jpg" alt=""></a>
+                          </li>
+      
+                          <li>
+                              <a class="thumbnail" id="carousel-selector-2"><img src="./img/hg2.jpg" alt=""></a>
+                          </li>
+      
+                          <li >
+                              <a class="thumbnail" id="carousel-selector-3"><img src="./img/hg3.jpg" alt=""></a>
+                          </li>
+      
+                          <li >
+                              <a class="thumbnail" id="carousel-selector-4"><img src="./img/hg4.jpg" alt=""></a>
+                          </li>
+      
+                          <li >
+                              <a class="thumbnail" id="carousel-selector-5"><img src="./img/hg5.jpg" alt=""></a>
+                          </li>
+                          <li >
+                              <a class="thumbnail" id="carousel-selector-6"><img src="./img/hg6.jpg" alt=""></a>
+                          </li>
+      
+                          <li >
+                              <a class="thumbnail" id="carousel-selector-7"><img src="./img/hg7.jpg" alt=""></a>
+                          </li>
+      
+                          <li >
+                              <a class="thumbnail" id="carousel-selector-8"><img src="./img/hg8.jpg" alt=""></a>
+                          </li>
+      
+                          <li>
+                              <a class="thumbnail" id="carousel-selector-9"><img src="./img/hg9.jpg" alt=""></a>
+                          </li>
+                          <li >
+                              <a class="thumbnail" id="carousel-selector-10"><img src="./img/hg10.jpg" alt=""></a>
+                          </li>
+      
+                          <li >
+                              <a class="thumbnail" id="carousel-selector-11"><img src="./img/hg11.jpg" alt=""></a>
+                          </li>
+      
+                          <li>
+                              <a class="thumbnail" id="carousel-selector-12"><img src="./img/hg12.jpg" alt=""></a>
+                          </li>
+      
+                          <li >
+                              <a class="thumbnail" id="carousel-selector-13"><img src="./img/hg13.jpg" alt=""></a>
+                          </li>
+                          <li >
+                              <a class="thumbnail" id="carousel-selector-14"><img src="./img/hg14.jpg" alt=""></a>
+                          </li>
+      
+                          <li >
+                              <a class="thumbnail" id="carousel-selector-15"><img src="./img/hg15.jpg" alt=""></a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-6">
+                      <div class="col-xs-12" id="slider">
+                          <!-- Top part of the slider -->
+                          <div class="row">
+                              <div class="col-sm-12" id="carousel-bounding-box">
+                                  <div class="carousel slide" id="myCarousel">
+                                      <!-- Carousel items -->
+                                      <div class="carousel-inner">
+                                          <div class="active item" data-slide-number="0"><img src="./img/hg0.jpg" alt=""></div>
+      
+                                          <div class="item" data-slide-number="1"><img src="./img/hg1.jpg" alt=""></div>
+                                            
+      
+                                          <div class="item" data-slide-number="2"><img src="./img/hg2.jpg" alt=""></div>
+                                              
+      
+                                          <div class="item" data-slide-number="3"><img src="./img/hg3.jpg" alt=""></div>
+                                              
+      
+                                          <div class="item" data-slide-number="4"><img src="./img/hg4.jpg" alt=""></div>
+                                             
+      
+                                          <div class="item" data-slide-number="5"><img src="./img/hg5.jpg" alt=""></div>
+                                
+                                          
+                                          <div class="item" data-slide-number="6"><img src="./img/hg6.jpg" alt=""></div>
+                                           
+                                          
+                                          <div class="item" data-slide-number="7"><img src="./img/hg7.jpg" alt=""></div>
+                                           
+                                          
+                                          <div class="item" data-slide-number="8"><img src="./img/hg8.jpg" alt=""></div>
+                                           
+                                          
+                                          <div class="item" data-slide-number="9"><img src="./img/hg9.jpg" alt=""></div>
+                                             
+                                          
+                                          <div class="item" data-slide-number="10"><img src="./img/hg10.jpg" alt=""></div>
+                                             
+                                          
+                                          <div class="item" data-slide-number="11"><img src="./img/hg11.jpg" alt=""></div>
+                                              
+                                          
+                                          <div class="item" data-slide-number="12"><img src="./img/hg12.jpg" alt=""></div>
+                                         
+      
+                                          <div class="item" data-slide-number="13"><img src="./img/hg13.jpg" alt=""></div>
+                                             
+      
+                                          <div class="item" data-slide-number="14"><img src="./img/hg14.jpg" alt=""></div>
+                                             
+      
+                                          <div class="item" data-slide-number="15"><img src="./img/hg15.jpg" alt=""></div>
+                                              
+                                      </div>
+                                      <!-- Carousel nav -->
+                                      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                          <span class="glyphicon glyphicon-chevron-left"></span>
+                                      </a>
+                                      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                          <span class="glyphicon glyphicon-chevron-right"></span>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!--/Slider-->
+              </div>
+          </div>
+        </div>
+
+          <!-- 문구 반복 애니메이션 효과 -->
+          <article class="sub3">
+            <div class="sub3-container">
+              <div class="sub3-text">
+                <div class="sub3-wrap">REPUBLIC OF KOREA AIRFORCE HONORGUARD</div>
+                <div class="sub3-wrap">REPUBLIC OF KOREA AIRFORCE HONORGUARD</div>
+                <div class="sub3-wrap">REPUBLIC OF KOREA AIRFORCE HONORGUARD</div>
+                <div class="sub3-wrap">REPUBLIC OF KOREA AIRFORCE HONORGUARD</div>
+                <div class="sub3-wrap">REPUBLIC OF KOREA AIRFORCE HONORGUARD</div>
+                <div class="sub3-wrap">REPUBLIC OF KOREA AIRFORCE HONORGUARD</div>
+              </div>
+            </div>
+          </article>
+
+        <!-- article7 홍보동영상 부분  --> 
+        <article id="article7" class="article7">
+          <h1>홍보동영상</h1>
+          <p>공군의장대의 다양한 동영상을 시청하세요.</p>
+          <!-- <p>공군의장대 관련 동영상 입니다.</p> -->
+          <div class="movie1 movie"> 
+            <p><img src="./img/youtube1.png" data-src="https://www.youtube.com/embed/nlbu3tGEV_E" alt=""></p>
+            <p><img src="./img/youtube2.png" data-src="https://www.youtube.com/embed/21ezUFfql7w" alt=""></p>
+            <p><img src="./img/youtube3.png" data-src="https://www.youtube.com/embed/pSw86VS09z0" alt=""></p>
+          </div> 
+
+          <div class="movie2 movie"> 
+            <p><img src="./img/youtube4.png" data-src="https://www.youtube.com/embed/g42cRuJzDDg" alt=""></p>
+            <p><img src="./img/youtube5.png" data-src="https://www.youtube.com/embed/DltaiqG14X4" alt=""></p>
+            <p><img src="./img/youtube6.png" data-src="https://www.youtube.com/embed/WytKBshzXnI" alt=""></p>
+          </div>  
+          
+          <div class="movie3 movie">
+            <p><img src="./img/youtube7.png" data-src="https://www.youtube.com/embed/sgTBweOC3eg" alt=""></p>
+            <p><img src="./img/youtube8.png" data-src="https://www.youtube.com/embed/7sWvl0z9rzg" alt=""></p>
+            <p><img src="./img/youtube9.png" data-src="https://www.youtube.com/embed/TIXuP0n50QM" alt=""></p> 
+          </div>
+
+        </article>
+        
+    </section>    
+
+        <!-- footer부분 -->
+        <footer id="footer">
+          <div class="bottom">
+              <div class="info">
+                   <div class="info1">
+                       <img src="./img/logo5.png" width="300px" height="120px" alt="">
+                   </div>
+                   <div class="info3">
+                       <p>대한민국 공군부사관 후보생(NBR 211th)<br>
+                          공군의장대 예비역 중사 김상환<br>
+                          tkdghks629@naver.com<br>
+                        2023 Copyright&copy; Aasin All Right Reserved</p>                         
+                   </div>           
+              </div>
+          </div>
+       </footer> 
+
+
+
+
+    <script type="text/javascript">
+       // article6 갤러리부분 스크립트
+      jQuery(document).ready(function($) {
+   
+          $('#myCarousel').carousel({
+                  interval: 5000
+          });
+   
+          //Handles the carousel thumbnails
+          $('[id^=carousel-selector-]').click(function () {
+          var id_selector = $(this).attr("id");
+          try {
+              var id = /-(\d+)$/.exec(id_selector)[1];
+              console.log(id_selector, id);
+              jQuery('#myCarousel').carousel(parseInt(id));
+          } catch (e) {
+              console.log('Regex failed!', e);
+          }
+      });
+          // When the carousel slides, auto update the text
+          $('#myCarousel').on('slid.bs.carousel', function (e) {
+                   var id = $('.item.active').data('slide-number');
+                  $('#carousel-text').html($('#slide-content-'+id).html());
+          });
+  });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+</html>
