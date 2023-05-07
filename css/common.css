@@ -118,7 +118,7 @@
 #header #nav .depth1 {
   position: absolute;
   top: 50%;
-  right:25%;
+  right:0%;
   transform: translateY(-50%);
   width: 800px;
   transition: all 0.8s;
@@ -128,7 +128,7 @@
 #header #nav .depth1 > li {
   display: block;
   padding: 0 30px;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
   color: #fff;
   position: relative;
@@ -157,7 +157,7 @@
   position: fixed;
   transition: 0.3s ease-in-out;
   width: 30px;
-  height: 25px;
+  height: 20px;
   /* top: 50%;
   right: 20px;
   transform: translateY(-50%); */
@@ -220,7 +220,7 @@
 .m_menu {
   position: fixed;
   /* background: #7ba9c3; */
-  background: #a1887f;
+  background: #103793;
   top: 0;
   left: 0;
   width: 100%;
@@ -241,9 +241,10 @@
 
 .m_menu nav ul li a {
   color: #fff;
-  opacity: 0.75;
+  opacity: 0.6;
   transition: opacity 0.2s ease;
-  font-size: 80px;
+  font-size: 70px;
+  font-weight: 900;
 }
 
 .m_menu nav ul li a:hover {
