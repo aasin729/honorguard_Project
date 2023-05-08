@@ -6,7 +6,59 @@ $(window).on('load', function(){
     scrollTo(0,0);
     },100);
 });
-   
+
+
+//스크롤 이벤트 
+
+//article2, article5, 부분
+
+let mission1 = $('.mission:nth-of-type(1)').offset().top - $(window).height()/2
+let mission2 = $('.mission:nth-of-type(2)').offset().top - $(window).height()/2
+let mission3 = $('.mission:nth-of-type(3)').offset().top - $(window).height()/2
+let mission4 = $('.mission:nth-of-type(4)').offset().top - $(window).height()/2
+
+
+let article5Near = $('.article5').offset().top - $(window).height()/2
+
+
+$(window).on('scroll', function(){
+   let sct =  $(this).scrollTop()
+
+  console.log(mission1,mission2,mission3,mission4)
+  // article2 부분 스크롤 이벤트 
+   if( sct < 1000){
+    $('.mission:nth-of-type(1)').removeClass('on')
+    $('.mission:nth-of-type(2)').removeClass('on')
+    $('.mission:nth-of-type(3)').removeClass('on')
+    $('.mission:nth-of-type(4)').removeClass('on')
+    
+   }else if(sct >= mission1 && sct < mission2){
+    $('.mission:nth-of-type(1)').addClass('on')
+   }else if(sct >= mission2 && sct < mission3){
+    $('.mission:nth-of-type(2)').addClass('on')
+   }else if(sct >= mission3 && sct < mission4 ){
+    $('.mission:nth-of-type(3)').addClass('on')
+   }else if(sct > mission4 ){
+    $('.mission:nth-of-type(4)').addClass('on')
+   }
+
+  //  article5 부분 스크롤 이벤트 
+   if(sct >= article5Near){
+    $('.recruit').addClass('on')
+   }else{
+    $('.recruit').removeClass('on')
+   }
+
+
+})
+
+
+
+
+
+
+
+//  article2 가로 스크롤 부분 
    const scale = 117.5309;
     let value = scale;
     let prevValue = value;
@@ -14,7 +66,6 @@ $(window).on('load', function(){
     let isFirst = true;
   
 
-    //  article2 가로 스크롤 부분 
     const carousel = new Swiper(".swiper", {
       mousewheel: {
         eventsTarget: ".mousewheel-wrap",

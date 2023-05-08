@@ -31,7 +31,7 @@
         }
         $( document ).ready(function() {
           var iframe_height = parseInt($('html').height()); 
-          window.parent.postMessage( iframe_height, 'https://bootsnipp.com');
+          window.parent.postMessage( iframe_height, 'https://bootsnipp.co m');
         });
     </script>
 
@@ -165,12 +165,12 @@
           <h1>주요 활동</h1>
           <p>공군의장대는 주로 아래와 같은 다양한 임무를 수행하고 있습니다.</p>
            <div class="mission">
-              <div class="mission-1">
+              <div class="mission-1 mission-left">
                   <video id="vid" muted autoplay loop>
                        <source src="./img/video1.mp4" type="video/mp4">
                    </video>
               </div>
-               <div class="mission-2">
+               <div class="mission-2 mission-right">
                   <div>
                       <h1>사열행사</h1>
                       <p>국가행사, 국군의날, 대통령행사 및 외국귀빈VIP<br>
@@ -182,7 +182,7 @@
               </div>
            </div>
            <div class="mission">
-             <div class="mission-2">
+             <div class="mission-2 mission-left">
                <div>
                  <h1>동작시범행사</h1>
                  <p>24인조로 구성되어 일치단결하게 화려한 공군만의<br>
@@ -191,19 +191,19 @@
                    역동적인 모습을 보여드리고 있습니다.</p>
                </div>
              </div>
-             <div class="mission-1">
+             <div class="mission-1 mission-right">
                 <video id="vid" muted autoplay loop>
                        <source src="./img/video2.mp4" type="video/mp4">
                    </video>
              </div>
            </div>
            <div class="mission">
-              <div class="mission-1">
+              <div class="mission-1 mission-left">
                   <video id="vid" muted autoplay loop>
                        <source src="./img/video3.mp4" type="video/mp4">
                    </video>
               </div>
-               <div class="mission-2">
+               <div class="mission-2 mission-right">
                   <div>
                       <h1>기수단</h1>
                       <p>기수단에서 기는 각 국가, 군, 부대를 대표하며<br> 
@@ -214,7 +214,7 @@
               </div>
            </div>
            <div class="mission">
-               <div class="mission-2">
+               <div class="mission-2 mission-left">
                   <div>
                       <h1>장의행사</h1>
                       <p>현충원행사, 안장식행사, 추모식 등, 나라를 위해 헌신하신<br>
@@ -224,13 +224,18 @@
                       </p>
                   </div>
               </div>
-              <div class="mission-1">
+              <div class="mission-1 mission-right">
                <video id="vid" muted autoplay loop>
                        <source src="./img/video4.mp4" type="video/mp4">
                    </video>
               </div>
            </div>
         </article>
+
+
+
+
+
 
         <!-- article4 배경이미지 부분  -->
         <article id="article4" class="article4">
@@ -239,46 +244,47 @@
 
         <!-- article5 의장대 모집 부분 -->
         <article id="article5" class="article5">
-          <h1>공군의장대 모집절차</h1>
-          <div class="recruit1">
-            <img src="./img/airforce1.jpg" alt="">
-            <p>공군인으로서 생각하는 윤리적 원칙이자 공통가치로 행동의 기준이 되며<br>
-              핵심4대가치는 <strong>도전</strong>, <strong>헌신</strong>, <strong>전문성</strong>, <strong>팀워크</strong> 입니다.
-            </p>
-          </div>  
-          
-         <div class="recruit2">
-            <h2>의장대에 지원하기 위해 아래의 자격 요건을 확인하세요.</h2>
-            <p>※ 장교 및 부사관은 당해 T.O 발생시 인사행정(총무)특기로 분류하여 선발 ※</p>
-            <p>배속지 : 국방부의장대대(서울 용산구), 공군본부 의장대(충남 계룡시) , 공군교육사령부 의장대(경남 진주시)</p>
-         </div>
-          <ul class="list">
-                <li class="box">
-                  <h3>연령/신체/자격</h3>
-                  <p>지원서 접수 기준 18세이상 28세이하<br>
-                  1~4급 현역병 입영대상인 사람<br>
-                  자격, 전공 상관없이 지원가능<br>
-                  병무청에서 매월 지원접수가능</p>
-                </li>
-                <li class="box">
-                  <h3>신체사항</h3>
-                  <p>신장/체중 : 180~190cm/65~85kg<br>
-                  시력 : 교정시력 0.7이상<br>(안경착용후 0.7이상도 가능)
-                  <br>반팔셔츠 착용시, 문신이 보이지 않는자</p>
-                </li>
-                <li class="box"> 
-                  <h3>체력</h3>
-                  <p>팔굽혀펴기(1분) 15회이상
-                  <br>윗몸일으키기(1분) 19회 이상<br>
-                  쪼그려뛰기(1분) 10회 이상</p>
-                </li>
-                <li class="box">
-                  <h3>지원제한 요건</h3>
-                  <p>금고이상의 형(집행유예 포함)을<br>선고받은사람<br>
-                  재판 중이거나 수사가 종결되지<br>아니한 사람<br>
-                  처분미상으로 통보된 사람</p>
-                </li>
-            </ul>
+          <div class="recruit">
+            <h1>공군의장대 모집절차</h1>
+            <div class="recruit1">
+              <img src="./img/airforce1.jpg" alt="">
+              <p>공군인으로서 생각하는 윤리적 원칙이자 공통가치로 행동의 기준이 되며<br>
+                핵심4대가치는 <strong>도전</strong>, <strong>헌신</strong>, <strong>전문성</strong>, <strong>팀워크</strong> 입니다.
+              </p>
+            </div>  
+           <div class="recruit2">
+              <h2>의장대에 지원하기 위해 아래의 자격 요건을 확인하세요.</h2>
+              <p>※ 장교 및 부사관은 당해 T.O 발생시 인사행정(총무)특기로 분류하여 선발 ※</p>
+              <p>배속지 : 국방부의장대대(서울 용산구), 공군본부 의장대(충남 계룡시) , 공군교육사령부 의장대(경남 진주시)</p>
+           </div>
+            <ul class="list">
+                  <li class="box">
+                    <h3>연령/신체/자격</h3>
+                    <p>지원서 접수 기준 18세이상 28세이하<br>
+                    1~4급 현역병 입영대상인 사람<br>
+                    자격, 전공 상관없이 지원가능<br>
+                    병무청에서 매월 지원접수가능</p>
+                  </li>
+                  <li class="box">
+                    <h3>신체사항</h3>
+                    <p>신장/체중 : 180~190cm/65~85kg<br>
+                    시력 : 교정시력 0.7이상<br>(안경착용후 0.7이상도 가능)
+                    <br>반팔셔츠 착용시, 문신이 보이지 않는자</p>
+                  </li>
+                  <li class="box"> 
+                    <h3>체력</h3>
+                    <p>팔굽혀펴기(1분) 15회이상
+                    <br>윗몸일으키기(1분) 19회 이상<br>
+                    쪼그려뛰기(1분) 10회 이상</p>
+                  </li>
+                  <li class="box">
+                    <h3>지원제한 요건</h3>
+                    <p>금고이상의 형(집행유예 포함)을<br>선고받은사람<br>
+                    재판 중이거나 수사가 종결되지<br>아니한 사람<br>
+                    처분미상으로 통보된 사람</p>
+                  </li>
+              </ul>
+          </div>
         </article> 
   
         <!-- 문구 반복 애니메이션 효과 -->
