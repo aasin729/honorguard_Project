@@ -291,6 +291,16 @@
   margin-top: 50px;
   width: 1400px;
 }
+.container .main_area .row {
+  opacity: 0;
+  transform: scale(0);
+  transition: all 2s;
+}
+.container .main_area .row.on {
+  opacity: 1;
+  transform: scale(1);
+  transition-delay: 0s;
+}
 .container .gallery h1 {
   font-size: 40px;
   margin-top: 50px;
@@ -373,7 +383,7 @@
 }
 
 .article7 {
-  margin-top: 5s0px;
+  margin: 50px 0;
   text-align: center;
 }
 .article7 h1 {
@@ -382,46 +392,65 @@
   font-weight: 700;
   text-align: center;
 }
-.article7 p {
+.article7 h3 {
   font-size: 25px;
   margin-top: 30px;
   font-weight: 500;
   text-align: center;
 }
 .article7 .movie {
+  margin: 0 300px;
+  display: flex;
+  flex-wrap: wrap;
   overflow: hidden;
 }
-.article7 .movie img {
+.article7 .movie p {
+  margin: 10px;
+  flex: 1 1 30%;
+  transform: scale(0.5);
+  opacity: 0;
+  transition: all 1.5s;
+}
+.article7 .movie p img {
   cursor: pointer;
-  transition: 0.4s;
+  width: 100%;
+  transition: all 0.3s;
 }
-.article7 .movie :hover {
-  box-sizing: border-box;
-  border: 3px solid blue;
+.article7 .movie p img:hover {
+  opacity: 0.8;
+  overflow: hidden;
+  border: 5px solid rgb(235, 38, 97);
 }
-.article7 .movie1 {
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.article7 .movie.on p {
+  transform: scale(1);
+  opacity: 1;
 }
-.article7 .movie2 {
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-  margin-top: -20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.article7 .movie.on p:nth-child(1) {
+  transition-delay: 0s;
 }
-.article7 .movie3 {
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-  margin-top: -20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.article7 .movie.on p:nth-child(2) {
+  transition-delay: 0.3s;
+}
+.article7 .movie.on p:nth-child(3) {
+  transition-delay: 0.6s;
+}
+.article7 .movie.on p:nth-child(4) {
+  transition-delay: 0.9s;
+}
+.article7 .movie.on p:nth-child(5) {
+  transition-delay: 1.2s;
+}
+.article7 .movie.on p:nth-child(6) {
+  transition-delay: 1.5s;
+}
+.article7 .movie.on p:nth-child(7) {
+  transition-delay: 1.8s;
+}
+.article7 .movie.on p:nth-child(8) {
+  transition-delay: 2.1s;
+}
+.article7 .movie.on p:nth-child(9) {
+  transition-delay: 2.4s;
 }
 
 /* footer 구역 */

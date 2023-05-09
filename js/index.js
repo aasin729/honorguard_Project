@@ -10,7 +10,7 @@ $(window).on('load', function(){
 
 //스크롤 이벤트 
 
-//article2, article5, 부분
+//article2, article5, article6, article7부분
 
 let mission1 = $('.mission:nth-of-type(1)').offset().top - $(window).height()/2
 let mission2 = $('.mission:nth-of-type(2)').offset().top - $(window).height()/2
@@ -18,13 +18,18 @@ let mission3 = $('.mission:nth-of-type(3)').offset().top - $(window).height()/2
 let mission4 = $('.mission:nth-of-type(4)').offset().top - $(window).height()/2
 
 
-let article5Near = $('.article5').offset().top - $(window).height()/2
+let article5 = $('.article5').offset().top - $(window).height()/2
+
+let article6 = $('#article6').offset().top - $(window).height()/2
+
+let article7 = $('.article7').offset().top - $(window).height()/2
 
 
 $(window).on('scroll', function(){
    let sct =  $(this).scrollTop()
 
-  console.log(mission1,mission2,mission3,mission4)
+  console.log(mission1,mission2,mission3,mission4,)
+
   // article2 부분 스크롤 이벤트 
    if( sct < 1000){
     $('.mission:nth-of-type(1)').removeClass('on')
@@ -43,19 +48,29 @@ $(window).on('scroll', function(){
    }
 
   //  article5 부분 스크롤 이벤트 
-   if(sct >= article5Near){
+   if(sct >= article5){
     $('.recruit').addClass('on')
    }else{
     $('.recruit').removeClass('on')
    }
 
 
+  //  article6 부분 스크롤 이벤트 
+   if(sct >= article6){
+    $('.row').addClass('on')
+   }else{
+    $('.row').removeClass('on')
+   }
+
+  //  article7 부분 스크롤 이벤트 
+   if(sct >= article7){
+    $('.movie').addClass('on')
+   }else{
+    $('.movie').removeClass('on')
+   }
+
+
 })
-
-
-
-
-
 
 
 //  article2 가로 스크롤 부분 

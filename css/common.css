@@ -220,7 +220,10 @@
 .m_menu {
   position: fixed;
   /* background: #7ba9c3; */
-  background: #103793;
+  /* background: #103793; */
+  background: url(../img/sidemain.jpg)  no-repeat center;
+  background-size: cover;
+ 
   top: 0;
   left: 0;
   width: 100%;
@@ -241,7 +244,7 @@
 
 .m_menu nav ul li a {
   color: #fff;
-  opacity: 0.6;
+  opacity: 0.7;
   transition: opacity 0.2s ease;
   font-size: 70px;
   font-weight: 900;
