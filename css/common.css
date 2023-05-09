@@ -134,6 +134,7 @@
   position: relative;
   margin: 45px 0;
   transition: all 0.3s;
+  
 }
 
 #header #nav .depth1 > li:hover {
@@ -223,7 +224,6 @@
   /* background: #103793; */
   background: url(../img/sidemain.jpg)  no-repeat center;
   background-size: cover;
- 
   top: 0;
   left: 0;
   width: 100%;

@@ -5,6 +5,7 @@
 }
 
 .section2 {
+  padding-top: 50px;
   padding: 300px 0;
   overflow: hidden;
 }
@@ -41,6 +42,7 @@
 }
 
 .article3 {
+  padding-top: 50px;
   height: 100%;
   background: #000;
   display: flex;
@@ -189,6 +191,7 @@
 }
 
 .article5 {
+  padding-top: 50px;
   text-align: center;
   margin-top: 100px;
   transition: all 0.2s 0s;
@@ -288,6 +291,7 @@
 }
 
 .container {
+  padding-top: 50px;
   margin-top: 50px;
   width: 1400px;
 }
@@ -383,6 +387,7 @@
 }
 
 .article7 {
+  padding-top: 50px;
   margin: 50px 0;
   text-align: center;
 }
@@ -402,9 +407,9 @@
   margin: 0 300px;
   display: flex;
   flex-wrap: wrap;
-  overflow: hidden;
 }
 .article7 .movie p {
+  overflow: hidden;
   margin: 10px;
   flex: 1 1 30%;
   transform: scale(0.5);
@@ -414,12 +419,12 @@
 .article7 .movie p img {
   cursor: pointer;
   width: 100%;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 .article7 .movie p img:hover {
-  opacity: 0.8;
+  opacity: 0.9;
   overflow: hidden;
-  border: 5px solid rgb(235, 38, 97);
+  border: 4px solid rgb(235, 38, 97);
 }
 .article7 .movie.on p {
   transform: scale(1);
