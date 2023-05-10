@@ -1,4 +1,14 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Hahmlet&family=Noto+Sans+KR&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+#section {
+  overflow-x: hidden;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
 .article1 .main video {
   margin: 0 auto;
   width: 100%;
@@ -34,7 +44,7 @@
   transform-origin: center;
   font-size: 30px;
   font-weight: 600;
-  letter-spacing: -0.01em;
+  letter-spacing: 3px;
   line-height: 2;
   color: #000;
   text-align: center;
@@ -219,16 +229,16 @@
 }
 .article5 .recruit1 p strong {
   font-weight: 700;
-  color: rgb(218, 218, 25);
+  color: #efc30a;
 }
 .article5 .recruit1 p strong:nth-child(4) {
-  color: blue;
+  color: #0054aa;
 }
 .article5 .recruit1 p strong:nth-child(2) {
-  color: red;
+  color: #f1222c;
 }
 .article5 .recruit1 p strong:nth-child(3) {
-  color: orange;
+  color: #ce7e27;
 }
 .article5 .recruit2 {
   margin-top: 50px;
@@ -398,7 +408,7 @@
 .article7 .movie p img:hover {
   opacity: 0.9;
   overflow: hidden;
-  border: 4px solid rgb(235, 38, 97);
+  border: 6px solid #5ca4e7;
 }
 .article7 .movie.on p {
   transform: scale(1);
@@ -457,38 +467,4 @@
 }
 .article8 .division ul li:hover {
   transform: scale(1.2);
-}
-
-/* footer 구역 */
-#footer {
-  height: 150px;
-  background: #090909;
-  padding: 20px 0px;
-  color: #ddd;
-  position: relative;
-}
-
-#footer .bottom {
-  width: 1000px;
-  margin: 0 auto;
-}
-
-#footer .info1 {
-  text-align: center;
-  position: absolute;
-  line-height: 2;
-}
-
-#footer .info3 {
-  text-align: right;
-}
-
-#footer .info3 p {
-  font-size: 14px;
-  letter-spacing: 2px;
-  line-height: 2;
-  padding: 10px 0;
-  padding-right: 40px;
-  font-weight: 700;
-  color: rgb(233, 236, 241);
 }/*# sourceMappingURL=index.css.map */

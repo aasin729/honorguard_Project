@@ -56,3 +56,29 @@ $(window).on("load", function () {
     $(".m_menu").toggleClass("visible");
   });
 });
+
+  $(".m_depth1 li a").on("click",function(){
+    $(".m_menu").removeClass("visible"); 
+    $(".hamburger-button").removeClass("active");
+  })
+
+
+
+//스크롤바를 내렸을때 화살표 나타나게하고 클릭하면 부드럽게 올라가게 하기
+$(window).scroll(function(){
+  let sct = $(this).scrollTop()   // window.scrollY, document.documentElement.scrollTop 
+  // console.log(sct)
+  if (sct > 100){
+      $('#gotop').fadeIn(300)
+  }else{
+      $('#gotop').fadeOut(300)
+  }
+})
+
+&('#gotop a').on('click', function(){
+  $('html').animate({
+      scrollTop:'0'
+  }, 500)
+
+  return false
+})
